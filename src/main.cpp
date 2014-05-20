@@ -50,7 +50,7 @@ map<uint256, map<uint256, CDataStream*> > mapOrphanTransactionsByPrev;
 // Constant stuff for coinbase transactions we create:
 CScript COINBASE_FLAGS;
 
-const string strMessageMagic = "Generic AltCoin Server Message:\n";
+const string strMessageMagic = "Generic HQCoin Server Message:\n";
 
 double dHashesPerSec;
 int64 nHPSTimerStart;
@@ -1903,7 +1903,7 @@ bool CheckDiskSpace(uint64 nAdditionalBytes)
         string strMessage = _("Warning: Disk space is low");
         strMiscWarning = strMessage;
         printf("*** %s\n", strMessage.c_str());
-        uiInterface.ThreadSafeMessageBox(strMessage, "Altcoin", CClientUIInterface::OK | CClientUIInterface::ICON_EXCLAMATION | CClientUIInterface::MODAL);
+        uiInterface.ThreadSafeMessageBox(strMessage, "HQCoin", CClientUIInterface::OK | CClientUIInterface::ICON_EXCLAMATION | CClientUIInterface::MODAL);
         StartShutdown();
         return false;
     }
@@ -2353,7 +2353,7 @@ bool static AlreadyHave(CTxDB& txdb, const CInv& inv)
 }
 
 
-unsigned char pchMessageStart[4] = { 'a', 'l', 't', 'c' }; // Altcoin message start string
+unsigned char pchMessageStart[4] = { 'a', 'l', 't', 'c' }; // HQCoin message start string
 
 
 bool static ProcessMessage(CNode* pfrom, string strCommand, CDataStream& vRecv)

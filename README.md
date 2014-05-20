@@ -1,4 +1,4 @@
-Altcoin - a rework of Litecoin, with various enhancements and changes.
+HQCoin - a rework of Litecoin, with various enhancements and changes.
 
  - 2.5 minute block targets
  - Base subsidy halves in 840k blocks (~4 years)
@@ -17,4 +17,4 @@ network, and will avoid block chain stalls, and encourage larger use.
 
 All original development, from the fork onwards, is available on Github.
 
-https://github.com/altcoin/altcoin
+https://github.com/hqcoin/hqcoin

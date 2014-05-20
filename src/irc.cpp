@@ -1,7 +1,7 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
 // Copyright (c) 2009-2012 The Bitcoin developers
 // Copyright (c) 2011-2012 Litecoin Developers
-// Copyright (c) 2013 The AltCoin Developers
+// Copyright (c) 2013 The HQCoin Developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -295,14 +295,14 @@ void ThreadIRCSeed2(void* parg)
         }
         
         if (fTestNet) {
-            Send(hSocket, "JOIN #altcoinTEST\r");
-            Send(hSocket, "WHO #altcoinTEST\r");
+            Send(hSocket, "JOIN #hqcoinTEST\r");
+            Send(hSocket, "WHO #hqcoinTEST\r");
         } else {
             // randomly join a channel between 00 and 99
             int channel_number = GetRandInt(100);
-            channel_number = 0; // AltCoin: for now, just use one channel
-            Send(hSocket, strprintf("JOIN #altcoin%02d\r", channel_number).c_str());
-            Send(hSocket, strprintf("WHO #altcoin%02d\r", channel_number).c_str());
+            channel_number = 0; // HQCoin: for now, just use one channel
+            Send(hSocket, strprintf("JOIN #hqcoin%02d\r", channel_number).c_str());
+            Send(hSocket, strprintf("WHO #hqcoin%02d\r", channel_number).c_str());
         }
 
         int64 nStart = GetTime();
