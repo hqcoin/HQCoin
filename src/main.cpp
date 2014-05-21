@@ -1986,7 +1986,7 @@ bool LoadBlockIndex(bool fAllowNew)
         //   vMerkleTree: 97ddfbbae6
 
         // Genesis block
-        const char* pszTimestamp = "Japan Times 2013-05-16 Hashimoto sticks to guns on sex slaves"; //This will change with the new Genesis block.
+        const char* pszTimestamp = "Traditionally one puts something timely here coinciding with the epoch"; //This will change with the new Genesis block.
         CTransaction txNew;
         txNew.vin.resize(1);
         txNew.vout.resize(1);
@@ -1998,13 +1998,13 @@ bool LoadBlockIndex(bool fAllowNew)
         block.hashPrevBlock = 0;
         block.hashMerkleRoot = block.BuildMerkleTree();
         block.nVersion = 1;
-        block.nTime    = 1317972665;
+        block.nTime    = 1300000000;
         block.nBits    = 0x1e0ffff0;
         block.nNonce   = 2084524493;
 
         if (fTestNet)
         {
-            block.nTime    = 1317798646;
+            block.nTime    = 1300000000;
             block.nNonce   = 385270584;
         }
 
