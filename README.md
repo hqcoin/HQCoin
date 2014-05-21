@@ -1,4 +1,4 @@
-HQCoin - a rework of Litecoin, with various enhancements and changes.
+HQCoin - a rework of HQCoin, with various enhancements and changes.
 
  - 2.5 minute block targets
  - Base subsidy halves in 840k blocks (~4 years)
