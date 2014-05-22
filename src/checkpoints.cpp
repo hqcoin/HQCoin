@@ -25,7 +25,7 @@ namespace Checkpoints
     //
     static MapCheckpoints mapCheckpoints =
         boost::assign::map_list_of
-        (     1, uint256("0x0")) // No checkpoints before coin is started!
+        (     1, uint256("0x5e5c9633cbb795fffed235b743817c470f955fa84fa1f6275ada3de368283a33")) // No checkpoints before coin is started!
         ;
     bool CheckBlock(int nHeight, const uint256& hash)
     {
